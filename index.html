@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ticket</title>
+	<link rel="stylesheet" type="text/css" href="EstiloI.css">
+</head>
+<body>
+	<article class="tckt">
+		<div class="ttl-tckt"><h3>Ticket De Compra</h2></div>
+
+		<div class="prdc">
+			<h4>Productos</h4>
+			<input type="text" id="precio1" placeholder="Producto 1">
+			<input type="text" id="precio2" placeholder="Producto 2">
+			<input type="text" id="precio3" placeholder="Producto 3">
+			<input type="text" id="precio4" placeholder="Producto 4">
+			<input type="text" id="precio5" placeholder="Producto 5">
+			<input type="text" id="precio6" placeholder="Producto 6">
+			<input type="text" id="precio7" placeholder="Producto 7">
+			<input type="text" id="precio8" placeholder="Producto 8">
+			<input type="text" id="precio9" placeholder="Producto 9">
+			<input type="text" id="precio0" placeholder="Producto 10">
+		</div>
+
+		<div class="total">
+			<h4>Total</h4>
+			<button onclick="sumar()">Total</button>
+			<p id="tot"></p>
+			<p id="iv"></p>
+			<p id="totiv"></p>
+		</div>
+	</article>
+
+	<script type="text/javascript">
+		function sumar() {
+			var a = document.getElementById("precio1").value;
+			var b = document.getElementById("precio2").value;
+			var c = document.getElementById("precio3").value;
+			var d = document.getElementById("precio4").value;
+			var e = document.getElementById("precio5").value;
+			var f = document.getElementById("precio6").value;
+			var g = document.getElementById("precio7").value;
+			var h = document.getElementById("precio8").value;
+			var i = document.getElementById("precio9").value;
+			var j = document.getElementById("precio0").value;
+
+			var sumT = parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d) + parseInt(f) +  parseInt(g) + parseInt(h) + parseInt(i) + parseInt(j) + parseInt(e);
+
+			var iva = sumT * .15;
+
+			var Total = sumT + iva;
+
+			document.getElementById("tot").innerHTML = "Total: " + sumT;
+			document.getElementById("iv").innerHTML = "IVA: " + iva;
+			document.getElementById("totiv").innerHTML = "Total + IVA: " + Total;
+		}
+		
+	</script>
+</body>
+</html>

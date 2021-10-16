@@ -1,0 +1,54 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background: url(BGPolygon.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.tckt {
+	position: absolute;
+	padding: 10px;
+	width: 80%;
+	height: 65%;
+	background: rgb(158, 56, 188, .3);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.ttl-tckt {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-bottom: solid 2px;
+}
+
+.prdc {
+	position: absolute;
+	padding: 5px;
+	left: 20px;
+	width: 68%;
+	height: 60%;
+	border-left: solid 2px;
+	border-right: solid 2px;
+	top: 120px
+}
+
+.total {
+	position: absolute;
+	padding: 5px;
+	right: 28px;
+	width: 20%;
+	height: 60%;
+	border-left: solid 2px;
+	border-right: solid 2px;
+	top: 120px
+}
+
+input {
+	height: 30px;
+	width: 350px;
+}
